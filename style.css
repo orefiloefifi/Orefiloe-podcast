@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f8f8, #E9E);
+    color: #333;
+}
+
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background:  light violet ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #D4AF37;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.hero-text {
+    margin-left: 30px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #D4AF37;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #E6E6FA;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* EPISODES */
+.episodes {
+    padding: 50px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+/* LISTEN */
+.listen {
+    text-align: center;
+    padding: 40px;
+}
+
+.icons span {
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* PLAYER */
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #D4AF37;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+}
